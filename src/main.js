@@ -52,3 +52,6 @@ renderer.setSize(container.clientWidth, container.clientHeight);
 
 // Make renderer aware of device's pixel ratio
 renderer.setPixelRatio(window.devicePixelRatio);
+
+// Add the <canvas> element to the page
+container.append(renderer.domElement);
