@@ -78,6 +78,14 @@ import { Mesh } from "three";
 const mesh = new Mesh(geometry, material);
 ```
 
+To add mesh to the scene you simply use the member operator and call add method. You pass the mesh :obj to the add method as parameter.
+
+```JavaScript
+scene.add(mesh);
+```
+
+important takeaways: Once the mesh has been added to the scene we call that mesh its child and we call the scene the parent of the mesh. Furthermore, you can remove the mesh child by using `.remove()` method and passing the mesh to it that you want to remove.
+
 ### Material
 
 Material defines how the surface of the mesh looks. The simplest kind of material available in ThreeJS is MeshBasicMaterial. It does not require for us to add and use lights in the scene.
