@@ -87,3 +87,13 @@ import { MeshBasicMaterial } from "three";
 
 const material = new MeshBasicMaterial();
 ```
+
+## More About Camera
+
+If the _scene_ is a tiny universe, stretching forever in all directions, the camera's viewing frustum is the part of it that we can se.
+
+**Frustum** is a mathematical term meaning a four-sided rectangular pyramid with the top cut off. When we view the scene through the _Perspectivecamera_ everything inside the frustum is visible, everything outside of it is not.
+
+The area between the **Near Clipping Plane** and **Far Clipping Plane** is the camera's viewing frustum. Hence, the four parameters we pass to the _PerspectiveCamera_ constructor: **field of view**, **aspect ratio**, **near clipping plane**, **far clipping plane**.
+
+Any objects in your scene that are not inside the frustum will not be rendered/drawn on canvas. If object is found on the margin of one or the other it will be chopped of (**clipped**). It is good to use this for the optimization.
