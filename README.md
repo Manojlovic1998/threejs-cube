@@ -26,4 +26,4 @@ _World Space_ is a 3D Cartesian coordinate system.
 
 Whenever we create or import a new object to our scene, it will be placed at the _origin_ point (0, 0, 0). The objects are also placed into the _scene graph_ which is a tree structure with the scene at the top.
 
-![Scene graph tree diagram](assets/readme/Scene%20Tree.jpg)
+![Scene graph tree diagram](assets/readme/Scene%20Tree%20Graph.jpg)
