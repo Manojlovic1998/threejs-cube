@@ -46,3 +46,6 @@ scene.add(mesh);
 
 // Create WebGL2 Renderer
 const renderer = new WebGLRenderer();
+
+// Set the render to the same size as our container element
+renderer.setSize(container.clientWidth, container.clientHeight);
