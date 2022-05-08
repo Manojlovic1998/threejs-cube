@@ -62,6 +62,24 @@ import { WebGLRenderer} from "three";
 const renderer = new WebGLRenderer();
 ```
 
+Aditionally you also have to tell the renderer what size is your scene. To do this you use the scene container wrapper.
+
+```JavaScript
+renderer.setSize(container.clientWidth, container.clientHeight);
+```
+
+`.clientWidth` and `.clientHeight` are DOM node's props. Hence, styling the scene container wrapper html element will directly affect the values of these two props. In the case of this project we are setting the container to:
+
+```CSS
+#scene-container{
+    positon: absolute;
+    width: 100%;
+    height: 100;
+}
+```
+
+**Note:** This will not result in good responsiveness of the page on resizing of the screen window. To solve that you would need to have the values of container's width and height re-evaluated on resize or per animated frame.
+
 ### Mesh
 
 Meshes are the most common kind of visible objects used in 3D computer graphics. They are used to display all kinds of 3D objects.
