@@ -47,5 +47,8 @@ scene.add(mesh);
 // Create WebGL2 Renderer
 const renderer = new WebGLRenderer();
 
-// Set the render to the same size as our container element
+// Set the renderer to the same size as our container element
 renderer.setSize(container.clientWidth, container.clientHeight);
+
+// Make renderer aware of device's pixel ratio
+renderer.setPixelRatio(window.devicePixelRatio);
