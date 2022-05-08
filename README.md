@@ -80,6 +80,13 @@ renderer.setSize(container.clientWidth, container.clientHeight);
 
 **Note:** This will not result in good responsiveness of the page on resizing of the screen window. To solve that you would need to have the values of container's width and height re-evaluated on resize or per animated frame.
 
+Lastly, when it comes to renderer config, we need to tell it what is the pixel ratio of the device's screen. This way we prevent blurring on HiDPI displays (retina displays).
+
+```JavaScript
+// Set the pixel ratio, so that scene will look good on HiDPI displays
+renderer.setPixelRatio(window.devicesPixelRatio);
+```
+
 ### Mesh
 
 Meshes are the most common kind of visible objects used in 3D computer graphics. They are used to display all kinds of 3D objects.
