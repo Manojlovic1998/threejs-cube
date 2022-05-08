@@ -5,7 +5,7 @@ import {
   BoxBufferGeometry,
   MeshBasicMaterial,
   Color,
-} from "three";
+} from "../vendor/three/build/three.module.js";
 
 // canvas-container node
 
