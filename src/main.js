@@ -41,5 +41,8 @@ const material = new MeshBasicMaterial();
 // Create Mesh
 const mesh = new Mesh(boxGeometry, material);
 
+// Add mesh to the scene
+scene.add(mesh);
+
 // Create WebGL2 Renderer
 const renderer = new WebGLRenderer();
