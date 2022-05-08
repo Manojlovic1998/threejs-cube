@@ -84,7 +84,7 @@ To add mesh to the scene you simply use the member operator and call add method.
 scene.add(mesh);
 ```
 
-important takeaways: Once the mesh has been added to the scene we call that mesh its child and we call the scene the parent of the mesh. Furthermore, you can remove the mesh child by using `.remove()` method and passing the mesh to it that you want to remove.
+important takeaways: Once the mesh was added to the scene we call that mesh its child and we call the scene the parent of the mesh. Furthermore, you can remove the mesh child by using `.remove()` method and passing the mesh to it that you want to remove.
 
 ### Material
 
