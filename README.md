@@ -27,3 +27,25 @@ _World Space_ is a 3D Cartesian coordinate system.
 Whenever we create or import a new object to our scene, it will be placed at the _origin_ point (0, 0, 0). The objects are also placed into the _scene graph_ which is a tree structure with the scene at the top.
 
 ![Scene graph tree diagram](assets/readme/Scene%20Tree%20Graph.jpg)
+
+### Camera
+
+There are several ways you can use to convert the scene graph into a human vision friendly format, using techniques called _projections_.
+
+**Perspective Projection**
+
+Perspective projection is the most important type of projection, as it is designed to match the way our eyes see the world.
+
+ThreeJS has a _PerspectiveCamera_ that we can use to view the scene. This camera is the 3D equivalent of a camera in the real world. It uses many of the same concepts such as **field of view** & **aspect ratio**.
+
+```JavaScript
+import { PerspectiveCamera } from "three";
+
+const fov = 35; // AKA Field of View
+const aspect = container.clientWidth / container.clientHeight;
+const near = 0.1; // the near clipping plane
+const far = 100; // the far clipping plane
+
+// Create Perspective Camera :obj
+const camera = new PerspectiveCamera(fov, aspect, near, far)
+```
