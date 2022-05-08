@@ -77,3 +77,13 @@ import { Mesh } from "three";
 // created before you pass them as parameters to Mesh
 const mesh = new Mesh(geometry, material);
 ```
+
+### Material
+
+Material defines how the surface of the mesh looks. The simplest kind of material available in ThreeJS is MeshBasicMaterial. It does not require for us to add and use lights in the scene.
+
+```JavaScript
+import { MeshBasicMaterial } from "three";
+
+const material = new MeshBasicMaterial();
+```
