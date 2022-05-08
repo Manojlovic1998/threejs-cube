@@ -97,3 +97,17 @@ If the _scene_ is a tiny universe, stretching forever in all directions, the cam
 The area between the **Near Clipping Plane** and **Far Clipping Plane** is the camera's viewing frustum. Hence, the four parameters we pass to the _PerspectiveCamera_ constructor: **field of view**, **aspect ratio**, **near clipping plane**, **far clipping plane**.
 
 Any objects in your scene that are not inside the frustum will not be rendered/drawn on canvas. If object is found on the margin of one or the other it will be chopped of (**clipped**). It is good to use this for the optimization.
+
+**Initial Position of the Camera**
+Every object we add to the scene is placed at the origin, this also includes the camera. Hence, positioning the camera first will allow us to better view the scene and what is going on.
+
+```JavaScript
+const camera = new PerspectiveCamera(fov, aspect, nearClip, farClip)
+
+
+// default position (0, 0, 0)
+// move the camera back so you can view the rendered objects
+
+camera.position.set(0, 0, 10);
+//                  X, Y, Z
+```
