@@ -1,4 +1,4 @@
-import { Scene, PerspectiveCamera } from "three";
+import { Scene, PerspectiveCamera, WebGLRenderer } from "three";
 
 // canvas-container node
 
@@ -15,3 +15,6 @@ const far = 100; // the far clipping plane
 
 // Create Camera
 const camera = new PerspectiveCamera(fov, aspect, near, far);
+
+// Create WebGL2 Renderer
+const renderer = new WebGLRenderer();
