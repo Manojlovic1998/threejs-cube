@@ -4,6 +4,7 @@ import {
   WebGLRenderer,
   BoxBufferGeometry,
   MeshBasicMaterial,
+  Color,
 } from "three";
 
 // canvas-container node
@@ -12,6 +13,9 @@ let container = document.getElementById("scene-container");
 
 // Create Scene
 const scene = new Scene();
+
+// Set Scene Background color
+scene.background = new Color("#000000");
 
 // Perspective Camera Config
 const fov = 35; // Field of View
