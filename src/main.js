@@ -27,6 +27,9 @@ const far = 100; // the far clipping plane
 // Create Camera
 const camera = new PerspectiveCamera(fov, aspect, near, far);
 
+// Set Camera position
+camera.position.set(0, 0, 10);
+
 // BoxBufferGeometry Config
 const boxLength = 2;
 const boxWidth = 2;
