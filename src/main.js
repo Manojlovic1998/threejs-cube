@@ -5,6 +5,7 @@ import {
   BoxBufferGeometry,
   MeshBasicMaterial,
   Color,
+  Mesh,
 } from "../vendor/three/build/three.module.js";
 
 // canvas-container node
@@ -36,6 +37,9 @@ const boxGeometry = new BoxBufferGeometry(boxLength, boxWidth, boxDepth);
 
 // Create Material for box geo..
 const material = new MeshBasicMaterial();
+
+// Create Mesh
+const mesh = new Mesh(boxGeometry, material);
 
 // Create WebGL2 Renderer
 const renderer = new WebGLRenderer();
