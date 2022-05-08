@@ -49,3 +49,15 @@ const far = 100; // the far clipping plane
 // Create Perspective Camera :obj
 const camera = new PerspectiveCamera(fov, aspect, near, far)
 ```
+
+### Renderer
+
+Renderer renders what is seen by the camera and draws it onto a `<canvas>` _incredibly fast_.
+
+For this project we will use _WebGLRenderer_ which renders our scenes using _WebGL2_ and if WebGL2 is not available it falls back to _WebGL V1_.
+
+```JavaScript
+import { WebGLRenderer} from "three";
+
+const renderer = new WebGLRenderer();
+```
