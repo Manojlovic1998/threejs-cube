@@ -61,3 +61,19 @@ import { WebGLRenderer} from "three";
 
 const renderer = new WebGLRenderer();
 ```
+
+### Mesh
+
+Meshes are the most common kind of visible objects used in 3D computer graphics. They are used to display all kinds of 3D objects.
+
+A mesh consists out of a geometry and a material.
+
+![Mesh components diagram](assets/readme/Mesh%20Composition.jpg)
+
+```JavaScript
+import { Mesh } from "three";
+
+// Consequently :geometry and :material also have to be
+// created before you pass them as parameters to Mesh
+const mesh = new Mesh(geometry, material);
+```
