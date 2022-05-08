@@ -58,3 +58,6 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 // Add the <canvas> element to the page
 container.append(renderer.domElement);
+
+// Render a still image of the scene
+renderer.render(scene, camera);
