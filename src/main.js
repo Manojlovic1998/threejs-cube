@@ -3,6 +3,7 @@ import {
   PerspectiveCamera,
   WebGLRenderer,
   BoxBufferGeometry,
+  MeshBasicMaterial,
 } from "three";
 
 // canvas-container node
@@ -28,6 +29,9 @@ const boxDepth = 2;
 
 // Create Geometry
 const boxGeometry = new BoxBufferGeometry(boxLength, boxWidth, boxDepth);
+
+// Create Material for box geo..
+const material = new MeshBasicMaterial();
 
 // Create WebGL2 Renderer
 const renderer = new WebGLRenderer();
